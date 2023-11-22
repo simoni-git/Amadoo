@@ -7,11 +7,14 @@
 
 import UIKit
 import CoreData
+
+
 	
-class MemoViewController: UIViewController , DataProtocol {
+class MemoViewController: UIViewController , MemoDataProtocol {
     
     func sendData(data: String) {
         self.memos.append(data)
+
         print("sendData 프로토콜발동!")
     }
     
@@ -23,11 +26,13 @@ class MemoViewController: UIViewController , DataProtocol {
         didSet {
             print(" didSet 호출됬다. --> memos 배열의 갯수는 ? \(memos.count) 개")
             saveMemosArray()
+
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         loadMemosArray()
         writeMemoBtn.layer.cornerRadius = 20
         print("MemoViewController viewDidLoad 호출됨")
@@ -51,7 +56,6 @@ class MemoViewController: UIViewController , DataProtocol {
         print("userDefault 로 MemosArray 를 저장했다. ")
       
     }
-    
 
     func loadMemosArray() {
         let userDefaults = UserDefaults.standard
@@ -63,7 +67,11 @@ class MemoViewController: UIViewController , DataProtocol {
             print("memos로 저장된거 없다 리턴한다")
             return
         }
+        self.tableView.reloadData()
     }
+    
+
+    
 }
 
 extension MemoViewController: UITableViewDataSource {
@@ -86,6 +94,7 @@ extension MemoViewController: UITableViewDataSource {
         let userDefaults = UserDefaults.standard
         userDefaults.removeObject(forKey: "data")
         print("UD 에서 데이터가 지워졌습니다")
+        
         tableView.reloadData()
     }
 }
@@ -96,9 +105,6 @@ extension MemoViewController: UITableViewDelegate {
     }
 }
 
-
 /*
- 
-    메모 부분은 코어데이터만 적용하면 끝.
-
+ 구현해야할것: 코어데이터로 구현하기
  */

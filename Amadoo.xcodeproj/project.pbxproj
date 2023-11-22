@@ -7,32 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049A27242B0C617B0080C73F /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A27232B0C617B0080C73F /* EventCell.swift */; };
+		049A27262B0C648B0080C73F /* CalenderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A27252B0C648B0080C73F /* CalenderDetailViewController.swift */; };
 		049C5E2D2B061CC000FC4550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C5E2C2B061CC000FC4550 /* AppDelegate.swift */; };
 		049C5E2F2B061CC000FC4550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C5E2E2B061CC000FC4550 /* SceneDelegate.swift */; };
 		049C5E312B061CC000FC4550 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C5E302B061CC000FC4550 /* CalenderViewController.swift */; };
 		049C5E342B061CC000FC4550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049C5E322B061CC000FC4550 /* Main.storyboard */; };
-		049C5E372B061CC000FC4550 /* Amadoo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 049C5E352B061CC000FC4550 /* Amadoo.xcdatamodeld */; };
 		049C5E392B061CC200FC4550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049C5E382B061CC200FC4550 /* Assets.xcassets */; };
 		049C5E3C2B061CC200FC4550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049C5E3A2B061CC200FC4550 /* LaunchScreen.storyboard */; };
 		049C5E452B061CD400FC4550 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 049C5E442B061CD400FC4550 /* FSCalendar */; };
 		049C5E472B061D8B00FC4550 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C5E462B061D8B00FC4550 /* MemoViewController.swift */; };
 		049C5E6F2B0628AB00FC4550 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C5E6E2B0628AB00FC4550 /* MemoCell.swift */; };
 		049C5E712B07064900FC4550 /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C5E702B07064900FC4550 /* MemoDetailViewController.swift */; };
+		04CB962F2B0BA61F0002EF6B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB962E2B0BA61F0002EF6B /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049A27232B0C617B0080C73F /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		049A27252B0C648B0080C73F /* CalenderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderDetailViewController.swift; sourceTree = "<group>"; };
 		049C5E292B061CC000FC4550 /* Amadoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amadoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049C5E2C2B061CC000FC4550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		049C5E2E2B061CC000FC4550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		049C5E302B061CC000FC4550 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		049C5E332B061CC000FC4550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		049C5E362B061CC000FC4550 /* Amadoo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amadoo.xcdatamodel; sourceTree = "<group>"; };
 		049C5E382B061CC200FC4550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049C5E3B2B061CC200FC4550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049C5E3D2B061CC200FC4550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049C5E462B061D8B00FC4550 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
 		049C5E6E2B0628AB00FC4550 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		049C5E702B07064900FC4550 /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
+		04CB962E2B0BA61F0002EF6B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,10 @@
 			children = (
 				049C5E2C2B061CC000FC4550 /* AppDelegate.swift */,
 				049C5E2E2B061CC000FC4550 /* SceneDelegate.swift */,
+				04CB962E2B0BA61F0002EF6B /* Event.swift */,
+				049A27232B0C617B0080C73F /* EventCell.swift */,
 				049C5E302B061CC000FC4550 /* CalenderViewController.swift */,
+				049A27252B0C648B0080C73F /* CalenderDetailViewController.swift */,
 				049C5E322B061CC000FC4550 /* Main.storyboard */,
 				049C5E462B061D8B00FC4550 /* MemoViewController.swift */,
 				049C5E702B07064900FC4550 /* MemoDetailViewController.swift */,
@@ -76,7 +83,6 @@
 				049C5E382B061CC200FC4550 /* Assets.xcassets */,
 				049C5E3A2B061CC200FC4550 /* LaunchScreen.storyboard */,
 				049C5E3D2B061CC200FC4550 /* Info.plist */,
-				049C5E352B061CC000FC4550 /* Amadoo.xcdatamodeld */,
 			);
 			path = Amadoo;
 			sourceTree = "<group>";
@@ -159,11 +165,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				049C5E712B07064900FC4550 /* MemoDetailViewController.swift in Sources */,
-				049C5E372B061CC000FC4550 /* Amadoo.xcdatamodeld in Sources */,
 				049C5E312B061CC000FC4550 /* CalenderViewController.swift in Sources */,
 				049C5E472B061D8B00FC4550 /* MemoViewController.swift in Sources */,
 				049C5E2D2B061CC000FC4550 /* AppDelegate.swift in Sources */,
+				049A27242B0C617B0080C73F /* EventCell.swift in Sources */,
 				049C5E2F2B061CC000FC4550 /* SceneDelegate.swift in Sources */,
+				049A27262B0C648B0080C73F /* CalenderDetailViewController.swift in Sources */,
+				04CB962F2B0BA61F0002EF6B /* Event.swift in Sources */,
 				049C5E6F2B0628AB00FC4550 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,19 +414,6 @@
 			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		049C5E352B061CC000FC4550 /* Amadoo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				049C5E362B061CC000FC4550 /* Amadoo.xcdatamodel */,
-			);
-			currentVersion = 049C5E362B061CC000FC4550 /* Amadoo.xcdatamodel */;
-			path = Amadoo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 049C5E212B061CC000FC4550 /* Project object */;
 }

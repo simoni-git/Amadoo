@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        print("2초뒤에 로딩화면에서 메인화면으로 넘어갑니다")
+        sleep(2)
         // Override point for customization after application launch.
         return true
     }
@@ -31,6 +33,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+//    func applicationWillTerminate(_ application: UIApplication) {
+//        if let appDomain = Bundle.main.bundleIdentifier {
+//            UserDefaults.standard.removePersistentDomain(forName: appDomain)
+//            print("앱을 종료하면서 앱 데이터가 모두 삭제되었습니다.")
+//        }
+//    }
 
     // MARK: - Core Data stack
 
@@ -41,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "Amadoo")
+        let container = NSPersistentContainer(name: "Memo")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

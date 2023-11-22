@@ -8,16 +8,23 @@
 import UIKit
 import CoreData
 
-protocol DataProtocol {
+protocol MemoDataProtocol {
     func sendData(data: String)
 }
 
 class MemoDetailViewController: UIViewController {
     
+    var context: NSManagedObjectContext {
+        guard let app = UIApplication.shared.delegate as? AppDelegate else {
+            fatalError()
+        }
+        return app.persistentContainer.viewContext
+    }
+    
     @IBOutlet var registerBtn: UIButton!
     @IBOutlet var memoTextField: UITextField!
     
-    var delegate: DataProtocol?
+    var delegate: MemoDataProtocol?
    
     
     override func viewDidLoad() {
