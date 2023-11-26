@@ -20,6 +20,8 @@
 		049C5E6F2B0628AB00FC4550 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C5E6E2B0628AB00FC4550 /* MemoCell.swift */; };
 		049C5E712B07064900FC4550 /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C5E702B07064900FC4550 /* MemoDetailViewController.swift */; };
 		04CB962F2B0BA61F0002EF6B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB962E2B0BA61F0002EF6B /* Event.swift */; };
+		04F2B3152B0DC48700F64748 /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F2B3132B0DC48700F64748 /* coreData.xcdatamodeld */; };
+		04F2B3172B0DDD4A00F64748 /* 내메모장.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2B3162B0DDD4A00F64748 /* 내메모장.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		049C5E6E2B0628AB00FC4550 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		049C5E702B07064900FC4550 /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
 		04CB962E2B0BA61F0002EF6B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		04F2B3142B0DC48700F64748 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		04F2B3162B0DDD4A00F64748 /* 내메모장.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "내메모장.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		049C5E202B061CC000FC4550 = {
 			isa = PBXGroup;
 			children = (
+				04F2B3162B0DDD4A00F64748 /* 내메모장.swift */,
 				049C5E2B2B061CC000FC4550 /* Amadoo */,
 				049C5E2A2B061CC000FC4550 /* Products */,
 			);
@@ -72,19 +77,36 @@
 			children = (
 				049C5E2C2B061CC000FC4550 /* AppDelegate.swift */,
 				049C5E2E2B061CC000FC4550 /* SceneDelegate.swift */,
+				04F2B3112B0DC33700F64748 /* CalenderGroup */,
+				049C5E322B061CC000FC4550 /* Main.storyboard */,
+				04F2B3122B0DC37A00F64748 /* MemoGroup */,
+				049C5E382B061CC200FC4550 /* Assets.xcassets */,
+				049C5E3A2B061CC200FC4550 /* LaunchScreen.storyboard */,
+				049C5E3D2B061CC200FC4550 /* Info.plist */,
+				04F2B3132B0DC48700F64748 /* coreData.xcdatamodeld */,
+			);
+			path = Amadoo;
+			sourceTree = "<group>";
+		};
+		04F2B3112B0DC33700F64748 /* CalenderGroup */ = {
+			isa = PBXGroup;
+			children = (
 				04CB962E2B0BA61F0002EF6B /* Event.swift */,
 				049A27232B0C617B0080C73F /* EventCell.swift */,
 				049C5E302B061CC000FC4550 /* CalenderViewController.swift */,
 				049A27252B0C648B0080C73F /* CalenderDetailViewController.swift */,
-				049C5E322B061CC000FC4550 /* Main.storyboard */,
+			);
+			path = CalenderGroup;
+			sourceTree = "<group>";
+		};
+		04F2B3122B0DC37A00F64748 /* MemoGroup */ = {
+			isa = PBXGroup;
+			children = (
 				049C5E462B061D8B00FC4550 /* MemoViewController.swift */,
 				049C5E702B07064900FC4550 /* MemoDetailViewController.swift */,
 				049C5E6E2B0628AB00FC4550 /* MemoCell.swift */,
-				049C5E382B061CC200FC4550 /* Assets.xcassets */,
-				049C5E3A2B061CC200FC4550 /* LaunchScreen.storyboard */,
-				049C5E3D2B061CC200FC4550 /* Info.plist */,
 			);
-			path = Amadoo;
+			path = MemoGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +190,11 @@
 				049C5E312B061CC000FC4550 /* CalenderViewController.swift in Sources */,
 				049C5E472B061D8B00FC4550 /* MemoViewController.swift in Sources */,
 				049C5E2D2B061CC000FC4550 /* AppDelegate.swift in Sources */,
+				04F2B3172B0DDD4A00F64748 /* 내메모장.swift in Sources */,
 				049A27242B0C617B0080C73F /* EventCell.swift in Sources */,
 				049C5E2F2B061CC000FC4550 /* SceneDelegate.swift in Sources */,
 				049A27262B0C648B0080C73F /* CalenderDetailViewController.swift in Sources */,
+				04F2B3152B0DC48700F64748 /* coreData.xcdatamodeld in Sources */,
 				04CB962F2B0BA61F0002EF6B /* Event.swift in Sources */,
 				049C5E6F2B0628AB00FC4550 /* MemoCell.swift in Sources */,
 			);
@@ -327,11 +351,14 @@
 				DEVELOPMENT_TEAM = C228F79P72;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Amadoo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Amadoo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,7 +368,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -355,11 +382,14 @@
 				DEVELOPMENT_TEAM = C228F79P72;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Amadoo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Amadoo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +399,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -414,6 +444,19 @@
 			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		04F2B3132B0DC48700F64748 /* coreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04F2B3142B0DC48700F64748 /* Model.xcdatamodel */,
+			);
+			currentVersion = 04F2B3142B0DC48700F64748 /* Model.xcdatamodel */;
+			path = coreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 049C5E212B061CC000FC4550 /* Project object */;
 }
