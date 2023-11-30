@@ -51,6 +51,8 @@ class MemoViewController: UIViewController , MemoDataProtocol {
         readCoreData()
         writeMemoBtn.layer.cornerRadius = 20
         
+        self.tableView.rowHeight = UITableView.automaticDimension
+        
         print("MemoViewController viewDidLoad 호출됨")
     }
     
