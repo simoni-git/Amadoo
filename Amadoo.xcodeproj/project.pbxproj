@@ -22,6 +22,8 @@
 		04CB962F2B0BA61F0002EF6B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB962E2B0BA61F0002EF6B /* Event.swift */; };
 		04F2B3152B0DC48700F64748 /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F2B3132B0DC48700F64748 /* coreData.xcdatamodeld */; };
 		04F2B3172B0DDD4A00F64748 /* 내메모장.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2B3162B0DDD4A00F64748 /* 내메모장.swift */; };
+		E47505E22B2C3C0200827DDD /* CalenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47505E12B2C3C0200827DDD /* CalenderViewModel.swift */; };
+		E47505E42B2C3C1400827DDD /* CalenderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47505E32B2C3C1400827DDD /* CalenderDetailViewModel.swift */; };
 		E49625862B2B1C1000064672 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49625852B2B1C1000064672 /* MemoViewModel.swift */; };
 		E49625882B2B1C1F00064672 /* MemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49625872B2B1C1F00064672 /* MemoDetailViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,8 @@
 		04CB962E2B0BA61F0002EF6B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		04F2B3142B0DC48700F64748 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		04F2B3162B0DDD4A00F64748 /* 내메모장.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "내메모장.swift"; sourceTree = "<group>"; };
+		E47505E12B2C3C0200827DDD /* CalenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewModel.swift; sourceTree = "<group>"; };
+		E47505E32B2C3C1400827DDD /* CalenderDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderDetailViewModel.swift; sourceTree = "<group>"; };
 		E49625852B2B1C1000064672 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		E49625872B2B1C1F00064672 /* MemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +102,9 @@
 				04CB962E2B0BA61F0002EF6B /* Event.swift */,
 				049A27232B0C617B0080C73F /* EventCell.swift */,
 				049C5E302B061CC000FC4550 /* CalenderViewController.swift */,
+				E47505E12B2C3C0200827DDD /* CalenderViewModel.swift */,
 				049A27252B0C648B0080C73F /* CalenderDetailViewController.swift */,
+				E47505E32B2C3C1400827DDD /* CalenderDetailViewModel.swift */,
 			);
 			path = CalenderGroup;
 			sourceTree = "<group>";
@@ -202,8 +208,10 @@
 				049A27242B0C617B0080C73F /* EventCell.swift in Sources */,
 				049C5E2F2B061CC000FC4550 /* SceneDelegate.swift in Sources */,
 				049A27262B0C648B0080C73F /* CalenderDetailViewController.swift in Sources */,
+				E47505E22B2C3C0200827DDD /* CalenderViewModel.swift in Sources */,
 				04F2B3152B0DC48700F64748 /* coreData.xcdatamodeld in Sources */,
 				04CB962F2B0BA61F0002EF6B /* Event.swift in Sources */,
+				E47505E42B2C3C1400827DDD /* CalenderDetailViewModel.swift in Sources */,
 				049C5E6F2B0628AB00FC4550 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

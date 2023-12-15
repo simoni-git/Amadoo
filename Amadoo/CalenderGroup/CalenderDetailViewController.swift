@@ -6,22 +6,22 @@
 //
 
 import UIKit
-
-protocol CalenderDataProtocol {
-    func sendData(date: String , eventName: String)
-}
+import Combine
 
 class CalenderDetailViewController: UIViewController {
     
     @IBOutlet var dateTextField: UITextField!
     @IBOutlet var eventTextField: UITextField!
     @IBOutlet var eventRegisterBtn: UIButton!
-    var delegate: CalenderDataProtocol?
+    
+    var viewmodel: CalenderDetailViewModel!
+    var calenderVM: CalenderViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDatePicker()
         eventRegisterBtn.layer.cornerRadius = 20
+        viewmodel = CalenderDetailViewModel()
         
     }
     
@@ -48,19 +48,22 @@ class CalenderDetailViewController: UIViewController {
         return formatter.string(from: date)
     }
     
-    
     @IBAction func tapEventRegisterBtn(_ sender: UIButton) {
         guard let dateText = dateTextField.text , !dateText.isEmpty,
               let eventText = eventTextField.text , !eventText.isEmpty else {return}
+        viewmodel.saveCoreData(date: dateText, eventName: eventText)
+        viewmodel.date = dateText
+        viewmodel.event = eventText
+        viewmodel.$date.assign(to: \.date, on: calenderVM)
+            .store(in: &viewmodel.bag)
+        viewmodel.$event.assign(to: \.event, on: calenderVM)
+            .store(in: &viewmodel.bag)
         
-        if let dateText = dateTextField.text , let eventText = eventTextField.text {
-            delegate?.sendData(date: dateText, eventName: eventText)
-        }
         navigationController?.popViewController(animated: true)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true) // 저번프로젝트에이어 또사용하는 키보드내려가랏메서드
+        self.view.endEditing(true) 
     }
     
 }
